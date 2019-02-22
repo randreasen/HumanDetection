@@ -2,8 +2,10 @@ from HumanDetection.boundingbox import *
 
 def metrics(dets,gt,threshold_IOU=0.5):
     if dets.size==0:
+        print("dets size = 0")
         return 0,0,len(gt)
     elif gt.size==0:
+        print("gt size = 0")
         return 0,len(dets),0
     TP={}
     FN=[]
