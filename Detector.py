@@ -1,4 +1,4 @@
-from YoloTorch import YoloTorch
+from .YoloTorch import YoloTorch
 import cv2
 import numpy as np
 class Detector:
