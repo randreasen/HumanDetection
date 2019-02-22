@@ -1,4 +1,4 @@
-from ./boundingbox import *
+from HumanDetection.boundingbox import *
 
 def metrics(dets,gt,threshold_IOU=0.5):
     if dets.size==0:
