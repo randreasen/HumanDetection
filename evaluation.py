@@ -1,4 +1,4 @@
-from boundingbox import *
+from ./boundingbox import *
 
 def metrics(dets,gt,threshold_IOU=0.5):
     if dets.size==0:
@@ -32,3 +32,5 @@ def metrics(dets,gt,threshold_IOU=0.5):
     FN=len(FN)
 
     return TP,FP,FN
+
+
