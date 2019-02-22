@@ -7,6 +7,7 @@ def metrics(dets,gt,threshold_IOU=0.5):
     elif gt.size==0:
         print("gt size = 0")
         return 0,len(dets),0
+    print("dets and gt not empty")
     TP={}
     FN=[]
     FP=[]
